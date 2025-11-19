@@ -7,8 +7,8 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", "http://localhost:5173", "https://bloggy-frontend-mu.vercel.app/"],
-          'img-src': ["'self'", "data:", "blob:", "http://localhost:1337", "https://bloggy-frontend-mu.vercel.app/"],
+          'connect-src': ["'self'", "http://localhost:5173", "https://bloggy-frontend-mu.vercel.app"],
+          'img-src': ["'self'", "data:", "blob:", "http://localhost:1337", "https://bloggy-frontend-mu.vercel.app"],
           'media-src': ["'self'", "data:", "blob:", "http://localhost:1337"],
           upgradeInsecureRequests: null,
         },
@@ -20,7 +20,7 @@ module.exports = [
     config: {
       origin: [
         'http://localhost:5173',
-        'https://bloggy-frontend-mu.vercel.app/',
+        'https://bloggy-frontend-mu.vercel.app',
       ],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
